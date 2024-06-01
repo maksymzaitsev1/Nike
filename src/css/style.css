@@ -1,0 +1,322 @@
+body {
+  --font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+:root {
+  --colorBackgroundPrimary: #012d63;
+  --colorTextPrimary: #dcdcdc;
+  --colorTextSecondary: #c7c7c7;
+  --colorTextTertiary: #ffffff;
+  --colorBackgroundButton: #8e32c6;
+  --colorTextAdditional: #d8d8d8;
+  --colorHover: #959595;
+  --colorLine: #8d8d8d;
+  --colorBackgroundSecondary: #021635;
+  --colorLine: #9b9b9b;
+}
+.header {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--colorBackgroundPrimary);
+  height: 90px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+}
+.header-container {
+  display: flex;
+  column-gap: 93px;
+  align-items: center;
+  padding: 15px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+}
+.lang-item {
+  display: flex;
+  column-gap: 8px;
+}
+.nav-link,
+.lang-link {
+  font-weight: 300;
+  font-size: 24px;
+  color: var(--colorTextSecondary);
+}
+.logo-main img {
+  /* display: block; */
+  margin-bottom: -15px;
+}
+.logo-text {
+  font-weight: 400;
+  font-size: 48px;
+  color: var(--colorTextTertiary);
+  margin-left: 25px;
+}
+.colorawe {
+  background-image: url(../img/background-nike.jpg);
+  height: 858px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.colorawe-container {
+  padding-top: 60px;
+}
+.colorawe-button {
+  border-radius: 10px;
+  width: 254px;
+  height: 67px;
+  background-color: var(--colorBackgroundButton);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--colorTextTertiary);
+}
+.adventages {
+  background-color: var(--colorBackgroundSecondary);
+  background-image: radial-gradient(
+    circle at right bottom,
+    #01a7c4 10%,
+    var(--colorBackgroundSecondary) 30%
+  );
+  background-image: radial-gradient(
+    circle at left top,
+    #8e32c6 10%,
+    var(--colorBackgroundSecondary) 30%
+  );
+  padding-bottom: 125px;
+  padding-top: 130px;
+}
+.adventages-list {
+  display: flex;
+  border: 5px solid var(--colorBackgroundButton);
+  column-gap: 145px;
+  padding-bottom: 125px;
+  padding-top: 130px;
+}
+.adventages-text {
+  border-right: 1px solid #fff;
+  margin-left: 50px;
+}
+.adventages-words {
+  border-right: 1px solid #fff;
+}
+.adventages-title {
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  color: var(--colorTextTertiary);
+}
+.reviews {
+  background-color: var(--colorBackgroundSecondary);
+  background-image: radial-gradient(
+    circle at right bottom,
+    #01a7c4 10%,
+    var(--colorBackgroundSecondary) 30%
+  );
+  padding-top: 25px;
+  padding-bottom: 115px;
+}
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+.reviews-info-one {
+  padding-bottom: 29px;
+  padding-top: 49px;
+  width: 255px;
+  box-shadow: 0 30px 0 -13px #533978, 0 14px 0 -5px #7b54b2;
+  background: linear-gradient(
+    135deg,
+    #00e5e6 7.29%,
+    #00a8f7 26.04%,
+    #9a76f9 62.5%,
+    #cc5ec2 100%
+  );
+  border-radius: 15px;
+}
+
+.reviews-info-two {
+  padding-bottom: 29px;
+  padding-top: 49px;
+  width: 255px;
+  box-shadow: 0 30px 0 -13px #61337c, 0 14px 0 -5px #9159b1;
+  background: linear-gradient(
+    135deg,
+    #ff68b4 0%,
+    #ff45e1 26.04%,
+    #ce3aff 62.84%,
+    #8961ff 100%
+  );
+  border-radius: 15px;
+}
+.reviews-info-tree {
+  padding-bottom: 29px;
+  padding-top: 49px;
+  width: 255px;
+  box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
+  background: linear-gradient(
+    135deg,
+    #ffe128 0%,
+    #ff9b5c 30.21%,
+    #ff8381 63.29%,
+    #ff5489 100%
+  );
+  border-radius: 15px;
+}
+.reviews {
+  border: 2px solid #fff;
+}
+.reviews-title {
+  text-align: center;
+  color: var(--colorTextTertiary);
+  font-weight: 400;
+  font-size: 48px;
+  padding-bottom: 24px;
+}
+.reviews-text {
+  color: var(--colorTextTertiary);
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 8px;
+  margin-left: 15px;
+  width: 228px;
+}
+.reviews-date {
+  color: var(--colorTextAdditional);
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 47px;
+  margin-left: 15px;
+}
+.reviews-name {
+  color: var(--colorTextTertiary);
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 1px;
+}
+.reviews-dateinfo {
+  color: var(--colorTextAdditional);
+  font-weight: 400;
+  font-size: 12px;
+}
+.colorawe-glove {
+  font-weight: 400;
+  font-size: 144px;
+  padding-bottom: 8px;
+  color: var(--colorTextTertiary);
+}
+.colorawe-item {
+  font-weight: 400;
+  font-size: 72px;
+  padding-bottom: 12px;
+  color: var(--colorTextTertiary);
+}
+.colorawe-text {
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 41px;
+  color: var(--colorTextTertiary);
+  width: 500px;
+}
+.colorawe-button {
+  border-radius: 16px;
+  width: 248px;
+  height: 68px;
+  background-color: var(--colorBackgroundButton);
+  border: none;
+}
+.order {
+  padding-bottom: 57px;
+  padding-top: 20px;
+  background-image: url(../img/background-order.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.order-title {
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  color: var(--colorTextTertiary);
+}
+.order-write {
+  text-align: center;
+  justify-content: center;
+}
+.order-writer-one {
+  border-radius: 50px;
+  width: 690px;
+  height: 60px;
+  margin-bottom: 19px;
+  font-weight: 400;
+  font-size: 28px;
+  color: var(--colorHover);
+  padding-left: 15px;
+}
+.order-writer {
+  border-radius: 50px;
+  width: 580px;
+  height: 50px;
+  margin-bottom: 19px;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--colorHover);
+}
+
+.order-button {
+  border-radius: 16px;
+  width: 248px;
+  height: 68px;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--colorTextTertiary);
+  background-color: var(--colorBackgroundButton);
+  border: none;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  background-color: var(--colorBackgroundSecondary);
+  padding-bottom: 50px;
+  padding-top: 45px;
+}
+.footer-email {
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--colorTextTertiary);
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--colorTextTertiary);
+}
+.footer-email-info {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--colorTextTertiary);
+}
+.logo-left {
+  width: 108px;
+  height: 81px;
+}
+.logo-footer {
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--colorTextTertiary);
+}
+.container {
+  max-width: 1110px;
+  padding-left: 65px;
+  /* padding-top: 65px; */
+  margin-left: auto;
+  margin-right: auto;
+}

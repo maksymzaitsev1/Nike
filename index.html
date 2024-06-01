@@ -3,15 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Shop nike</title>
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="#" class="logo"
-          ><img src="./img/logo-nike.svg" alt="Nike"
-        /></a>
+        <a href="#" class="logo"><img src="./src/img/logo.svg" alt="Nike" /></a>
         <nav class="header-nav">
           <ul class="nav-menu">
             <li class="nav-item">
@@ -34,15 +39,24 @@
             </li>
           </ul>
         </nav>
+        <div class="header-lang">
+          <ul class="lang-item">
+            <li class="lang-link">Ua</li>
+            <li class="lang-link">Eng</li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
       <section class="colorawe">
-        <div class="container">
-          <a href="#" class="logo-main"><img src="" alt="Nike" /></a>
+        <div class="container colorawe-container">
+          <div class="logo-main">
+            <img src="./src/img/nike.png" alt="Nike" />
+            <p class="logo-text">С&R</p>
+          </div>
           <h1 class="colorawe-glove">ColoRawe</h1>
           <h2 class="colorawe-item">Your dream Nike</h2>
-          <p>
+          <p class="colorawe-text">
             On this site you can find custom Nike sneakers of your dreams. The
             original company caт`t create such beautiful sneakers as we do. Good
             luck finding your way in the world of custom sneakers.
@@ -50,67 +64,88 @@
           <button class="colorawe-button">Buy my Nike</button>
         </div>
       </section>
-      <section class="shop">
+      <section class="adventages">
         <div class="container">
-          <div class="shop-proposition-one">
-            <h2 class="shop-one">Premium Quality</h2>
-            <img src="./img/src/star.jpg" alt="star" />
-          </div>
-          <div class="shop-proposition-two">
-            <img src="./img/src/balons.jpg" alt="balons" />
-            <h2 class="shop-two">Indelible paint</h2>
-          </div>
-          <div class="shop-proposition-tree">
-            <h2 class="shop-tree">Fast shipping</h2>
-            <img src="./img/src/car.jpg" alt="car" />
-          </div>
+          <ul class="adventages-list">
+            <li class="adventages-text">
+              <h2 class="adventages-title">Premium Quality</h2>
+              <div class="adventages-proposition">
+                <img src="./src/img/star.png" alt="star" />
+              </div>
+            </li>
+            <li class="adventages-words">
+              <h2 class="adventages-title">Indelible paint</h2>
+              <div class="adventages-proposition">
+                <img src="./src/img/balon.png" alt="balon" />
+              </div>
+            </li>
+
+            <li class="adventages-item">
+              <h2 class="adventages-title">Fast shipping</h2>
+              <div class="adventages-proposition">
+                <img src="./src/img/car.png" alt="car" />
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="reviews">
-        <div class="container">
-          <article class="reviews-info">
-            <h3 class="reviews-text">
-              Sneakers are very comfortable and well painted, nothing has worn
-              off in a year.
-            </h3>
-            <p class="reviews-date">25.11</p>
-            <h4 class="reviews-name">John Teylor</h4>
-            <p class="reviews-dateinfo">With us from 2018</p>
-          </article>
-          <article class="reviews-info">
-            <h3 class="reviews-text">
-              I'm very happy with this color scheme. They match all my clothes.
-            </h3>
-            <p class="reviews-date">05.01</p>
-            <h4 class="reviews-name">Elizabeth Garsia</h4>
-            <p class="reviews-dateinfo">With us from 2020</p>
-          </article>
-          <article class="reviews-info">
-            <h3 class="reviews-text">
-              Just right if you need to go to a party. I use them actively, the
-              paint is super.
-            </h3>
-            <p class="reviews-date">18.06</p>
-            <h4 class="reviews-name">Tom Maquare</h4>
-            <p class="reviews-dateinfo">With us from 2019</p>
-          </article>
+        <h2 class="reviews-title">Reviews</h2>
+        <div class="container reviews-container">
+          <div class="reviews-info-one">
+            <article class="reviews-info">
+              <p class="reviews-text">
+                Sneakers are very comfortable and well painted, nothing has worn
+                off in a year.
+              </p>
+              <p class="reviews-date">25.11</p>
+
+              <p class="reviews-name">John Teylor</p>
+              <p class="reviews-dateinfo">With us from 2018</p>
+            </article>
+          </div>
+          <div class="reviews-info-two">
+            <article class="reviews-info">
+              <p class="reviews-text">
+                I'm very happy with this color scheme. They match all my
+                clothes.
+              </p>
+              <p class="reviews-date">05.01</p>
+
+              <p class="reviews-name">Elizabeth Garsia</p>
+              <p class="reviews-dateinfo">With us from 2020</p>
+            </article>
+          </div>
+          <div class="reviews-info-tree">
+            <article class="reviews-info">
+              <p class="reviews-text">
+                Just right if you need to go to a party. I use them actively,
+                the paint is super.
+              </p>
+
+              <p class="reviews-date">18.06</p>
+
+              <p class="reviews-name">Tom Maquare</p>
+              <p class="reviews-dateinfo">With us from 2019</p>
+            </article>
+          </div>
         </div>
       </section>
       <section class="order">
-        <div class="container">
-          <h2>Order</h2>
-          <form action="#">
+        <h2 class="order-title">Order</h2>
+        <div class="container order-container">
+          <form class="order-form" action="#">
             <div class="order-write">
               <label class="order-info" for="email" hidden>Пошта</label>
               <input
-                class="order-writer"
+                class="order-writer-one"
                 id="address"
                 type="text"
                 placeholder="Write your email"
               />
             </div>
           </form>
-          <form action="#">
+          <form class="order-form" action="#">
             <div class="order-write">
               <label class="order-info" for="address" hidden>Адреса</label>
               <input
@@ -141,7 +176,9 @@
               />
             </div>
           </form>
-          <button class="colorawe-button">Order my Nike</button>
+          <div class="button-container">
+            <button class="order-button">Order my Nike</button>
+          </div>
         </div>
       </section>
     </main>
@@ -175,7 +212,18 @@
             </li>
           </ul>
         </div>
-        <div class="footer-"></div>
+        <div class="footer-info-email">
+          <a
+            class="footer-email-info"
+            href="mailto:2022 ColoRawe @All rights reserved"
+            >2022 ColoRawe @All rights reserved</a
+          >
+          <p class="footer-email-info">United States</p>
+          <a href="#" class="logo-left"
+            ><img src="./src/img/logo.svg" alt="Nike"
+          /></a>
+          <p class="logo-footer">С&R</p>
+        </div>
       </div>
     </footer>
   </body>
