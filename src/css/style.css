@@ -77,15 +77,15 @@ body {
 .adventages {
   background-color: var(--colorBackgroundSecondary);
   background-image: radial-gradient(
-    circle at right bottom,
-    #01a7c4 10%,
-    var(--colorBackgroundSecondary) 30%
-  );
-  background-image: radial-gradient(
-    circle at left top,
-    #8e32c6 10%,
-    var(--colorBackgroundSecondary) 30%
-  );
+      circle at right bottom,
+      #01a7c4 10%,
+      #02163500 30%
+    ),
+    radial-gradient(
+      circle at left top,
+      #8e32c6 10%,
+      var(--colorBackgroundSecondary) 30%
+    );
   padding-bottom: 125px;
   padding-top: 130px;
 }
@@ -96,9 +96,14 @@ body {
   padding-bottom: 125px;
   padding-top: 130px;
 }
+.adventages-proposition {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 100px;
+}
 .adventages-text {
   border-right: 1px solid #fff;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 .adventages-words {
   border-right: 1px solid #fff;
@@ -118,6 +123,9 @@ body {
   );
   padding-top: 25px;
   padding-bottom: 115px;
+  background-image: url(../img/background-flowers.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 .reviews-container {
   display: flex;
@@ -138,7 +146,16 @@ body {
   );
   border-radius: 15px;
 }
-
+.reviews-text-one {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+.reviews-text-info {
+  display: flex;
+  flex-direction: column;
+}
 .reviews-info-two {
   padding-bottom: 29px;
   padding-top: 49px;
@@ -184,6 +201,13 @@ body {
   padding-bottom: 8px;
   margin-left: 15px;
   width: 228px;
+}
+.reviews-img {
+  width: 31px; /* Ширина зображення */
+  height: 31px; /* Висота зображення */
+  border-radius: 50%; /* Закруглення кутів, щоб зробити зображення круглим */
+  object-fit: cover; /* Зберігає пропорції зображення і обтинає його по краях */
+  /* Інші стилі за потребою */
 }
 .reviews-date {
   color: var(--colorTextAdditional);
@@ -242,6 +266,7 @@ body {
   font-size: 48px;
   text-align: center;
   color: var(--colorTextTertiary);
+  padding-bottom: 33px;
 }
 .order-write {
   text-align: center;
@@ -265,6 +290,7 @@ body {
   font-weight: 400;
   font-size: 24px;
   color: var(--colorHover);
+  padding-left: 15px;
 }
 
 .order-button {
@@ -287,31 +313,58 @@ body {
   padding-bottom: 50px;
   padding-top: 45px;
 }
-.footer-email {
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer-question,
+.footer-support {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-bottom {
+  justify-content: space-between;
+  display: flex;
+  padding-top: 24px;
+  border-top: 1px solid #9b9b9b;
+}
+
+.support-link {
   font-weight: 400;
   font-size: 24px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--colorTextTertiary);
 }
-.footer-text {
+.question-link {
   font-weight: 400;
   font-size: 24px;
   color: var(--colorTextTertiary);
+  line-height: 1.17;
 }
-.footer-email-info {
+.footer-copyright {
   font-weight: 400;
   font-size: 18px;
   color: var(--colorTextTertiary);
 }
-.logo-left {
+.footer-united {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--colorTextTertiary);
+  padding-top: 7px;
+}
+.footer-logo img {
   width: 108px;
   height: 81px;
+  margin-bottom: -15px;
 }
-.logo-footer {
+.logo-text-footer {
   font-weight: 400;
   font-size: 24px;
   color: var(--colorTextTertiary);
+  margin-left: 30px;
 }
 .container {
   max-width: 1110px;
