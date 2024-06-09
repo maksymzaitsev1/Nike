@@ -1,8 +1,10 @@
 body {
-  --font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+
   font-weight: 400;
   font-size: 24px;
 }
+
 :root {
   --colorBackgroundPrimary: #012d63;
   --colorTextPrimary: #dcdcdc;
@@ -29,11 +31,13 @@ body {
   align-items: center;
   padding: 15px;
 }
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 50px;
+  gap: 29px;
 }
 .lang-item {
   display: flex;
@@ -44,6 +48,11 @@ body {
   font-weight: 300;
   font-size: 24px;
   color: var(--colorTextSecondary);
+  line-height: 1.25;
+}
+.lang-link:hover,
+.nav-link:hover {
+  color: white;
 }
 .logo-main img {
   /* display: block; */
@@ -54,6 +63,8 @@ body {
   font-size: 48px;
   color: var(--colorTextTertiary);
   margin-left: 25px;
+  margin-top: -20px;
+  font-family: "PT Serif", sans-serif;
 }
 .colorawe {
   background-image: url(../img/background-nike.jpg);
@@ -66,14 +77,22 @@ body {
   padding-top: 60px;
 }
 .colorawe-button {
+  display: inline-block;
   border-radius: 10px;
-  width: 254px;
-  height: 67px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: var(--colorBackgroundButton);
   font-weight: 400;
   font-size: 24px;
   color: var(--colorTextTertiary);
 }
+.colorawe-button:hover {
+  background-color: #bf76ed;
+  color: #ffffff;
+}
+
 .adventages {
   background-color: var(--colorBackgroundSecondary);
   background-image: radial-gradient(
@@ -86,44 +105,44 @@ body {
       #8e32c6 10%,
       var(--colorBackgroundSecondary) 30%
     );
-  padding-bottom: 125px;
-  padding-top: 130px;
+  padding-bottom: 105px;
+  padding-top: 105px;
 }
 .adventages-list {
   display: flex;
   border: 5px solid var(--colorBackgroundButton);
-  column-gap: 145px;
-  padding-bottom: 125px;
-  padding-top: 130px;
+  column-gap: 50px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
-.adventages-proposition {
-  display: flex;
-  /* flex-direction: column; */
-  gap: 100px;
-}
+
 .adventages-text {
-  border-right: 1px solid #fff;
-  margin-left: 20px;
+  /* border-right: 1px solid #fff; */
 }
 .adventages-words {
   border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  padding-right: 95px; /* Додати відступ для границі */
+  padding-left: 95px;
 }
 .adventages-title {
   font-weight: 400;
   font-size: 36px;
   text-align: center;
   color: var(--colorTextTertiary);
+  max-width: 159px;
+  margin: 0 auto;
+  line-height: 1.41;
+  font-family: "Playfair Display", sans-serif;
 }
 .reviews {
   background-color: var(--colorBackgroundSecondary);
-  background-image: radial-gradient(
-    circle at right bottom,
-    #01a7c4 10%,
-    var(--colorBackgroundSecondary) 30%
-  );
+  background-image: url(../img/background-flowers.png),
+    radial-gradient(circle at right bottom, #01a7c4 10%, #021635 30%);
   padding-top: 25px;
   padding-bottom: 115px;
-  background-image: url(../img/background-flowers.png);
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -136,7 +155,7 @@ body {
   padding-bottom: 29px;
   padding-top: 49px;
   width: 255px;
-  box-shadow: 0 30px 0 -13px #533978, 0 14px 0 -5px #7b54b2;
+  box-shadow: 0 14px 0 -5px #7b54b2, 0 30px 0 -13px #533978;
   background: linear-gradient(
     135deg,
     #00e5e6 7.29%,
@@ -160,7 +179,7 @@ body {
   padding-bottom: 29px;
   padding-top: 49px;
   width: 255px;
-  box-shadow: 0 30px 0 -13px #61337c, 0 14px 0 -5px #9159b1;
+  box-shadow: 0 14px 0 -5px #9159b1, 0 30px 0 -13px #61337c;
   background: linear-gradient(
     135deg,
     #ff68b4 0%,
@@ -174,7 +193,7 @@ body {
   padding-bottom: 29px;
   padding-top: 49px;
   width: 255px;
-  box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
+  box-shadow: 0 14px 0 -5px #b95a4c, 0 30px 0 -13px #732f26;
   background: linear-gradient(
     135deg,
     #ffe128 0%,
@@ -193,6 +212,8 @@ body {
   font-weight: 400;
   font-size: 48px;
   padding-bottom: 24px;
+  line-height: 1.35;
+  font-family: "Playfair Display", sans-serif;
 }
 .reviews-text {
   color: var(--colorTextTertiary);
@@ -201,13 +222,13 @@ body {
   padding-bottom: 8px;
   margin-left: 15px;
   width: 228px;
+  line-height: 1.17;
 }
 .reviews-img {
-  width: 31px; /* Ширина зображення */
-  height: 31px; /* Висота зображення */
-  border-radius: 50%; /* Закруглення кутів, щоб зробити зображення круглим */
-  object-fit: cover; /* Зберігає пропорції зображення і обтинає його по краях */
-  /* Інші стилі за потребою */
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .reviews-date {
   color: var(--colorTextAdditional);
@@ -215,29 +236,36 @@ body {
   font-size: 14px;
   padding-bottom: 47px;
   margin-left: 15px;
+  line-height: 1.14;
 }
 .reviews-name {
   color: var(--colorTextTertiary);
   font-weight: 400;
   font-size: 14px;
   padding-bottom: 1px;
+  line-height: 1.14;
 }
 .reviews-dateinfo {
   color: var(--colorTextAdditional);
   font-weight: 400;
   font-size: 12px;
+  line-height: 1.17;
 }
 .colorawe-glove {
   font-weight: 400;
   font-size: 144px;
   padding-bottom: 8px;
   color: var(--colorTextTertiary);
+  line-height: 1.33;
+  font-family: "Playfair Display", sans-serif;
 }
 .colorawe-item {
   font-weight: 400;
   font-size: 72px;
   padding-bottom: 12px;
   color: var(--colorTextTertiary);
+  line-height: 1.33;
+  font-family: "Playfair Display", sans-serif;
 }
 .colorawe-text {
   font-weight: 400;
@@ -245,17 +273,13 @@ body {
   padding-bottom: 41px;
   color: var(--colorTextTertiary);
   width: 500px;
+  line-height: 1.17;
 }
-.colorawe-button {
-  border-radius: 16px;
-  width: 248px;
-  height: 68px;
-  background-color: var(--colorBackgroundButton);
-  border: none;
-}
+
 .order {
   padding-bottom: 57px;
   padding-top: 20px;
+  background-color: var(--colorBackgroundSecondary);
   background-image: url(../img/background-order.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -267,6 +291,8 @@ body {
   text-align: center;
   color: var(--colorTextTertiary);
   padding-bottom: 33px;
+  line-height: 1.33;
+  font-family: "Playfair Display", sans-serif;
 }
 .order-write {
   text-align: center;
@@ -280,7 +306,8 @@ body {
   font-weight: 400;
   font-size: 28px;
   color: var(--colorHover);
-  padding-left: 15px;
+  padding-left: 25px;
+  line-height: 1.25;
 }
 .order-writer {
   border-radius: 50px;
@@ -290,24 +317,38 @@ body {
   font-weight: 400;
   font-size: 24px;
   color: var(--colorHover);
-  padding-left: 15px;
+  padding-left: 25px;
+  line-height: 1.17;
 }
-
+.order-writer-one:hover,
+.order-writer:hover {
+  background-color: rgb(245, 242, 242);
+}
 .order-button {
   border-radius: 16px;
-  width: 248px;
-  height: 68px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   font-weight: 400;
   font-size: 24px;
   color: var(--colorTextTertiary);
   background-color: var(--colorBackgroundButton);
   border: none;
+  display: inline-block;
 }
+
+.order-button:hover {
+  background-color: #bf76ed;
+  color: #ffffff;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .footer {
   background-color: var(--colorBackgroundSecondary);
   padding-bottom: 50px;
@@ -337,23 +378,32 @@ body {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--colorTextTertiary);
+  line-height: 1.17;
 }
+
 .question-link {
   font-weight: 400;
   font-size: 24px;
   color: var(--colorTextTertiary);
   line-height: 1.17;
 }
+.support-link:hover,
+.question-link:hover {
+  color: var(--colorHover);
+}
+
 .footer-copyright {
   font-weight: 400;
   font-size: 18px;
   color: var(--colorTextTertiary);
+  line-height: 1.17;
 }
 .footer-united {
   font-weight: 400;
   font-size: 18px;
   color: var(--colorTextTertiary);
   padding-top: 7px;
+  line-height: 1.17;
 }
 .footer-logo img {
   width: 108px;
@@ -365,7 +415,10 @@ body {
   font-size: 24px;
   color: var(--colorTextTertiary);
   margin-left: 30px;
+  margin-top: -10px;
+  font-family: "PT Serif", sans-serif;
 }
+
 .container {
   max-width: 1110px;
   padding-left: 65px;
